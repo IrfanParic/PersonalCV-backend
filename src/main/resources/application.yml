@@ -1,0 +1,21 @@
+server:
+  port: ${APPLICATON_PORT:8080}
+
+spring:
+  datasource:
+    url: jdbc:postgresql://${APP_DB_URL:localhost}:${APP_DB_PORT:5432}/${NAME_APP_DB:PersonalCV-database}
+    username: ${DB_USER_NAME:postgres}
+    password: ${DB_USER_PASSWORD:123494}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    openInView: false
+    show_sql: true
+    generate-ddl: true
+  data:
+    jpa:
+      repositories.enabled: true
+
+service:
+  ui:
+    url: ${FRONTEND-API-URL:http://localhost:4200}
