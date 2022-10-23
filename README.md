@@ -16,4 +16,4 @@ Have an IDE installed (such as Intellij).
 
 ## Deployment
 
-This application is deployed on [Heroku](https://www.heroku.com).
+This application is deployed on [Railway](https://railway.app).
