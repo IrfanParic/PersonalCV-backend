@@ -19,5 +19,3 @@ spring:
 service:
   ui:
     url: ${FRONTEND-API-URL:http://localhost:4200}
-
-
