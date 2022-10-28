@@ -12,9 +12,6 @@ public class CorsConfiguration {
     @Value("${service.ui.url}")
     private String[] allowedOrigins;
 
-    @Value("${FRONTEND-API-URL-2}")
-    private String[] origin2;
-
     @Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
@@ -22,8 +19,7 @@ public class CorsConfiguration {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
                         .allowedMethods("*")
-                        .allowedOrigins(allowedOrigins)
-                        .allowedOrigins(origin2);
+                        .allowedOrigins(allowedOrigins);
             }
         };
     }
