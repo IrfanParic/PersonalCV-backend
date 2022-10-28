@@ -19,7 +19,7 @@ public class CorsConfiguration {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
                         .allowedMethods("*")
-                        .allowedOrigins("${FRONTEND-API-URL}","${FRONTEND-API-URL-2}");
+                        .allowedOrigins(allowedOrigins);
             }
         };
     }
