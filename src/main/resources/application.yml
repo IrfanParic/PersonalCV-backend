@@ -18,6 +18,6 @@ spring:
 
 service:
   ui:
-    url: ${FRONTEND-API-URL:http://localhost:4200}
+    url: ${FRONTEND-API-URL:http://localhost:4200}, ${FRONTED-API-URL-2:http://localhost:4200}
 
 
