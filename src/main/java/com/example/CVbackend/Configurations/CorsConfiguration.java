@@ -9,7 +9,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class CorsConfiguration {
 
-    private String[] allowedOrigins = new String[] {"${service.ui.url}","${FRONTEND-API-URL-2}"};
+    @Value("${service.ui.url}")
+    private String[] allowedOrigins;
 
     @Bean
     public WebMvcConfigurer corsConfigurer() {
