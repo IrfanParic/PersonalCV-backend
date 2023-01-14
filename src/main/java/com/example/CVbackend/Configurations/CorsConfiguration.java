@@ -19,7 +19,7 @@ public class CorsConfiguration {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
                         .allowedMethods("*")
-                        .allowedOrigins("https://irfanparic.tech");
+                        .allowedOrigins(allowedOrigins);
             }
         };
     }
