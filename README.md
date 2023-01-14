@@ -9,7 +9,6 @@ Backend part of this application is initialized using Spring Initializr using th
 Next step is to add two dependencies:
 - Spring Web which uses REST and Tomcat as a default embedded server and pulls in all dependencies related to web development. Second dependency is Lombok which helps to reduce boilerplate code.
 Have an IDE installed (such as Intellij).
-- Clone this repository using the following command: git clone https://github.com/AmilM7/ress-backend.git
 - After clonning the repository, open the pom.xml file in the IDE and confirm to open it as a project.
 - Click the run/debug icon or Shift+F10 on the keyboard.
 - The application is running in your browser at localhost:8080.
